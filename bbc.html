@@ -176,9 +176,13 @@
 
             .newsitem a {
                 color: #1F4F82;
+            }
+
+            a {
                 text-decoration: none;
             }
-            .newsitem a:hover {
+            
+            a:hover {
                 text-decoration: underline;
             }
 
@@ -197,7 +201,7 @@
                 background-color: #EEEEEE;
                 float: right;
                 width: 300px;
-                height: 350px;
+                height: 390px;
                 position: relative;
                 top: -80px;
             }
@@ -437,6 +441,26 @@
                 background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
             }
 
+            #livelist ul {
+                margin: 0;
+                padding: 0 10px 10px 10px;
+            }
+            #livelist li {
+                list-style: none;
+                margin: 0;
+	            padding: 10px 10px 10px 30px;
+                font-size: 1.2em;
+                background-image: url("images/live.png");
+                background-repeat: no-repeat;
+                background-size: 25px;
+                background-position: left center;
+            }
+
+            .bb {
+                border-bottom: 1px solid #DDDDDD;
+            }
+
+
         </style>
     </head>
 
@@ -519,7 +543,7 @@
                         <div id="watchlisten">
                             <h2>Watch/Listen</h2>
                             <div class="watchListenContainer">
-                                carasol made from https://css-tricks.com/css-only-carousel/
+                                <!-- carasol made from https://css-tricks.com/css-only-carousel/ -->
                                 <section class="carousel" aria-label="Gallery">
                                     <ol class="carousel__viewport">
                                       <li id="carousel__slide1"
@@ -582,6 +606,13 @@
                                     </aside>
                                   </section>
 
+                            </div>
+                            <div id="livelist">
+                                <ul>
+                                    <li class="bb"><a href="">BBC News Channel</a></li>
+                                    <li class="bb"><a href="">Radio 5 Live</a></li>
+                                    <li><a href="">Osborne interviewed</a></li>
+                                </ul>
                             </div>
                         </div>
 
