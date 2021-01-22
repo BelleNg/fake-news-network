@@ -185,7 +185,7 @@ a:hover {
     padding-left: 26px;;
 }
 .links {
-    line-height: 1.6em;
+    size: 1.6em;
 }
 
 #watchlisten {
@@ -308,22 +308,19 @@ ol, li {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: #f99;
+    background-color: #EEEEEE;
     counter-increment: item;
 }
 
 .carousel__slide:nth-child(even) {
-    background-color: #99f;
+    background-color: #EEEEEE;
 }
 
 .carousel__slide:before {
-    content: counter(item);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,-40%,70px);
-    color: #fff;
-    font-size: 2em;
 }
 
 .carousel__snapper {
